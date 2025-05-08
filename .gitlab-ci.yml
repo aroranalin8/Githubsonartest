@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 stages:
 
   - runSAST
@@ -17,4 +18,13 @@ run-sast-job:
   script: |
     cd /project
 >>>>>>> fb106b4 (add the project)
+=======
+stages:
+  - runSAST
+
+run-sast-job:
+  stage: runSAST
+  image: maven:3.8.5-openjdk-17-slim
+  script: 
+>>>>>>> 7a01ea0 (Update 2 files)
     mvn verify package sonar:sonar -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.organization=OrgSonarTest -Dsonar.projectKey=orgsonartest_projectsonartes-Dsonar.token=a63ce8f45678a092c0a41dc69d2d5e051c6b8991
