@@ -1,4 +1,6 @@
+
 stages:
+
   - runSAST
 
 run-sast-job:
